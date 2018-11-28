@@ -4,10 +4,10 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/src'));
+app.use(express.static('src'));
 
 app.get('/*', function(req,res) {
-	res.sendFile(path.join(__dirname+'/src/index.html'));
+	res.sendFile(path.join('src/index.html'));
 });
 
 console.log('HEY');
