@@ -4,13 +4,11 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('/dist/ezbac'));
+app.use(express.static(__dirname + '/src'));
 
 app.get('/*', function(req,res) {
-	res.send('CONECTADO');
-	//res.sendFile(path.join('/dist/ezbac/index.html'));
+	res.sendFile(path.join(__dirname + '/src/index.html'));
 });
 
-//console.log('HEY');
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
