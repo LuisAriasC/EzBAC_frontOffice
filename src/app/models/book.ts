@@ -1,9 +1,10 @@
 export class Book {
 
-    constructor(_id = '',title = '',description='', genre='',year = 0,pages = 0,editorial='',total = 0,onloan = 0,inhouse = 0, image = '',type = '',file = '', status = ''){
+    constructor(_id = '',title = '',description= '', author= '', genre='',year = 0,pages = 0,editorial='',total = 0,onloan = 0,inhouse = 0, image = '',type = '',file = '', status = ''){
         this._id=_id;
         this.title= title;
         this.description= description;
+        this.author = author;
         this.genre= genre;
         this.year= year;
         this.pages= pages;
