@@ -11,7 +11,7 @@ import { Rent } from 'src/app/models/rent';
 })
 export class RentsComponent implements OnInit {
 
-  constructor(private rentService: RentService) { }
+  constructor(public rentService: RentService) { }
 
   ngOnInit() {
     this.getRents();

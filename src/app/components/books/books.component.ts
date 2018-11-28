@@ -13,7 +13,7 @@ declare var M: any;
 })
 export class BooksComponent implements OnInit {
 
-  constructor(private bookService: BookService) { }
+  constructor(public bookService: BookService) { }
 
   ngOnInit() {
     this.getBooks();
