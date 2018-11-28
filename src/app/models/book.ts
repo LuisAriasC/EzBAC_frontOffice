@@ -20,6 +20,7 @@ export class Book {
    public _id: string;
    public title: string;
    public description: string;
+   this.author: string;
    public genre: string;
    public year: Number;
    public pages: Number;
