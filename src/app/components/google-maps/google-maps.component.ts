@@ -12,4 +12,8 @@ export class GoogleMapsComponent implements OnInit {
   ngOnInit() {
   }
 
+  contactForm(form: NgForm) {
+
+  }
+
 }
