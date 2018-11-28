@@ -7,7 +7,8 @@ const app = express();
 app.use(express.static('/dist/ezbac'));
 
 app.get('/*', function(req,res) {
-	res.sendFile(path.join('/dist/ezbac/index.html'));
+	res.send('CONECTADO');
+	//res.sendFile(path.join('/dist/ezbac/index.html'));
 });
 
 //console.log('HEY');
